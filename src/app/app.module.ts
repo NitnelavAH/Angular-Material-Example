@@ -5,9 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { CardsComponent } from './components/cards/cards.component';
 
 //MAterial
 import { MatMenuModule } from '@angular/material/menu';
@@ -17,13 +19,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConfirmDialogComponent,
     ToolbarComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatIconModule,
     MatDialogModule,
     MatDividerModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatCardModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

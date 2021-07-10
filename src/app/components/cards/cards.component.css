@@ -1,0 +1,13 @@
+.container {
+    padding: 16px;
+}
+
+.container > mat-card {
+    margin-bottom: 16px;
+}
+
+img{
+    width: 40%;
+    display: block;
+    margin: auto;
+}
